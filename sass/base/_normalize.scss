@@ -1,0 +1,67 @@
+:hover,
+:focus,
+:focus-within {
+    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+:focus {
+    outline: none;
+}
+
+body {
+    background-color: var(--white);
+    font-family: roboto, sans-serif;
+    letter-spacing: 0.03em;
+    line-height: 1.2;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+body a {
+    text-decoration: none;
+    color: currentColor;
+}
+
+/* убираем маркеры в списках */
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+button {
+    font-family: inherit;
+    cursor: pointer;
+    color: var(--title-text-color);
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.88;
+    text-align: center;
+    letter-spacing: 0.06em;
+    border: none;
+    border-radius: 4px;
+    padding: 6px 22px;
+    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* цвет кнопки гпавной при ховере 188CE8 */
+button:hover {
+    color: var(--white);
+    background-color: var(--blue);
+
+}
+
+button:focus {
+    color: var(--white);
+    background-color: var(--blue);
+    outline: 3px solid black;
+}
+
+.container {
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+    width: 480px;
+    outline: 2px solid none;
+}

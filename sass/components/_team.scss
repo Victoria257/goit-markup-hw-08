@@ -1,0 +1,88 @@
+.team {
+    
+    /*padding-bottom: 94px;*/
+    outline: 2px solid none;
+    background-color: rgba(245, 244, 250, 1);
+
+
+        &__title {
+            font-weight: 700;
+            font-size: 28px;
+            line-height: 1.18;
+            text-align: center;
+            letter-spacing: 0.03em;
+            /*margin: 0;*/
+        }
+    
+        /*&__list {
+            display: flex;
+            margin-top: 50px;
+            margin-bottom: 0;
+            margin-right: -30px;
+            justify-content: space-between;
+        }
+        */
+        &__card {
+            text-align: center;
+            background-color: var(--white);
+            font-size: 16px;
+            line-height: 1.19;
+            /*margin-right: 30px;
+            padding-bottom: 30px;*/
+            box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.2), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12);
+    
+        }
+    
+        &__name {
+            font-size: 16px;
+            line-height: 1.19;
+            text-align: center;
+            letter-spacing: 0.03em;
+            font-weight: 500;
+            color: var(--title-text-color);
+        }
+    
+        &__specialty {
+            color: var(--pargraf-text-color);
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 1.19;
+            text-align: center;
+            letter-spacing: 0.03em;
+        }
+    
+        &__social-box {
+            /*display: flex;
+            padding: 0 32px;
+            margin: 0;
+            justify-content: space-between;
+            align-items: center;
+            */
+            list-style: none;
+        }
+    
+        &__social-nets {
+            /*padding: 12px;
+            justify-content: center;*/
+            border: none;
+            color: rgba(175, 177, 184, 1);
+            border-radius: 50%;
+            width: 44px;
+            height: 44px;
+            transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    
+                &:hover,
+                &:focus-within {
+                    color: rgba(255, 255, 255, 1);
+                    background-color: var(--blue);
+                }
+    
+        }
+    
+        &__icon {
+    
+            width: 20px;
+            height: 20px;
+            fill: currentColor;
+        }
+}
