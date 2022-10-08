@@ -90,10 +90,10 @@ button:focus {
 .container {
   margin-left: auto;
   margin-right: auto;
-  /*padding-left: 15px;
-  padding-right: 15px;*/
-  width: 480px;
-  outline: 4px solid none;
+  padding-left: 15px;
+  padding-right: 15px;
+  max-width: 480px;
+  outline: 2px solid gray;
 }
 
 .header {
@@ -208,19 +208,20 @@ button:focus {
 
 .hero {
   max-width: 480px;
+  max-height: 400px;
   margin-left: auto;
   margin-right: auto;
-  height: 400px;
   color: var(--white);
   background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/1/bg-title.png);
   background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/1/bg-title.png);
   background-color: var(--dark-background);
-  background-size: contain;
+  background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   text-align: center;
-  /*padding: 118px 60px;*/
-  outline: solid red;
+}
+.hero__wrapper {
+  padding: 118px 60px;
 }
 .hero__title {
   font-weight: 900;
@@ -489,16 +490,16 @@ button:focus {
 }
 
 .advantage {
-  font-size: 14px;
-  outline: 2px solid none;
-  /*padding-top: 94px;
-  padding-bottom: 94px;*/
   /*&__list {
       display: flex;
       justify-content: space-between;
       margin-right: -30px;
   }
   */
+}
+.advantage__wrapper {
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 .advantage__title {
   color: var(--title-text-color);
@@ -508,9 +509,8 @@ button:focus {
   text-align: center;
   letter-spacing: 0.03em;
   text-transform: uppercase;
-  /*padding-top: 30px;
-  margin-top: 0;
-  margin-bottom: 0;*/
+  margin-top: 30px;
+  margin-bottom: 0;
 }
 .advantage__text {
   color: var(--pargraf-text-color);
@@ -518,33 +518,37 @@ button:focus {
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
-  /*margin-top: 10px;
-  margin-bottom: 0;*/
+  margin-top: 10px;
+  margin-bottom: 0;
 }
 
 .advantage__item {
   /* margin-right: 30px;*/
 }
 .advantage__item::before {
-  /*display: block;
+  display: block;
   content: "";
-  height: 120px;*/
+  height: 120px;
   background-color: rgb(245, 244, 250);
   background-size: 70px;
   background-repeat: no-repeat;
   background-position: center;
+  border-radius: 4px;
 }
 .advantage__item:nth-child(1)::before {
-  background-image: url(../images/icons.svg/antenna.svg);
+  background-image: url(/images/icons.svg/antenna.svg);
 }
 .advantage__item:nth-child(2)::before {
-  background-image: url(../images/icons.svg/clock.svg);
+  margin-top: 30px;
+  background-image: url(/images/icons.svg/clock.svg);
 }
 .advantage__item:nth-child(3)::before {
-  background-image: url(../images/icons.svg/diagram.svg);
+  margin-top: 30px;
+  background-image: url(/images/icons.svg/diagram.svg);
 }
 .advantage__item:nth-child(4)::before {
-  background-image: url(../images/icons.svg/astronaut.svg);
+  margin-top: 30px;
+  background-image: url(/images/icons.svg/astronaut.svg);
 }
 
 .directions {
@@ -609,7 +613,8 @@ button:focus {
   background-color: rgb(245, 244, 250);
 }
 .team__wrapper {
-  padding: 60px 15px;
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 .team__title {
   font-weight: 700;
@@ -637,6 +642,7 @@ button:focus {
   padding-bottom: 30px;*/
   -webkit-box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.2), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12);
           box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.2), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12);
+  border-radius: 0px 0px 4px 4px;
 }
 .team__name {
   font-size: 16px;

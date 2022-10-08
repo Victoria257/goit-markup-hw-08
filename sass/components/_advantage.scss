@@ -1,8 +1,9 @@
 .advantage {
-    font-size: 14px;
-    outline: 2px solid none;
-    /*padding-top: 94px;
-    padding-bottom: 94px;*/
+
+    &__wrapper {
+        padding-top: 60px;
+        padding-bottom: 60px;
+    }
 
     /*&__list {
         display: flex;
@@ -18,9 +19,8 @@
         text-align: center;
         letter-spacing: 0.03em;
         text-transform: uppercase;
-        /*padding-top: 30px;
-        margin-top: 0;
-        margin-bottom: 0;*/
+        margin-top: 30px;
+        margin-bottom: 0;
     }
 
     &__text {
@@ -29,8 +29,8 @@
         font-size: 14px;
         line-height: 1.71;
         letter-spacing: 0.03em;
-        /*margin-top: 10px;
-        margin-bottom: 0;*/
+        margin-top: 10px;
+        margin-bottom: 0;
     }
 }
 
@@ -40,31 +40,35 @@
    /* margin-right: 30px;*/
 
     &::before {
-        /*display: block;
+        display: block;
         content: "";
-        height: 120px;*/
+        height: 120px;
         background-color: rgba(245, 244, 250, 1);
         background-size: 70px;
         background-repeat: no-repeat;
         background-position: center;
+        border-radius: 4px;
     }
 
 
     &:nth-child(1)::before {
-        background-image: url(../images/icons.svg/antenna.svg);
+        background-image: url(/images/icons.svg/antenna.svg);
 
     }
 
     &:nth-child(2)::before {
-        background-image: url(../images/icons.svg/clock.svg);
+        margin-top: 30px;
+        background-image: url(/images/icons.svg/clock.svg);
     }
 
     &:nth-child(3)::before {
-        background-image: url(../images/icons.svg/diagram.svg);
+        margin-top: 30px;
+        background-image: url(/images/icons.svg/diagram.svg);
     }
 
     &:nth-child(4)::before {
-        background-image: url(../images/icons.svg/astronaut.svg);
+        margin-top: 30px;
+        background-image: url(/images/icons.svg/astronaut.svg);
     }
 }
 

@@ -1,20 +1,23 @@
 .hero {
     max-width: 480px;
+    max-height: 400px;
     margin-left: auto;
     margin-right: auto;
-    height: 400px;
     color: var(--white);
     background-image: linear-gradient(to right,
             rgba(47, 48, 58, 0.4),
             rgba(47, 48, 58, 0.4)), url(../images/1/bg-title.png);
     background-color: var(--dark-background);
-    background-size: contain;
+    background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     text-align: center;
-    /*padding: 118px 60px;*/
-    outline: solid red;
     
+
+    &__wrapper {
+        padding: 118px 60px;
+
+    }
 
     &__title {
         font-weight: 900;
