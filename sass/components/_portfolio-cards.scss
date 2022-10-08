@@ -1,11 +1,11 @@
 .portfolio-cards {
-    margin-top: 34px;
+    /*margin-top: 34px;
     margin-bottom: 94px;
     display: flex;
     flex-wrap: wrap;
     align-items: center;
     gap: 30px;
-    margin-bottom: 0;
+    margin-bottom: 0;*/
 
     .portfolio-cards__item {
         &:hover,
@@ -19,9 +19,9 @@
 
 
 .card {
-    position: relative;
+    /*position: relative;
     display: flex;
-    align-content: flex-end;
+    align-content: flex-end;*/
     /*ховаємо модальне вікно, яке без ховеру знаходиться під фото*/
     overflow: hidden;
 
@@ -55,10 +55,10 @@
     }
 
     &__content {
-        padding-top: 20px;
+        /*padding-top: 20px;
         padding-bottom: 19px;
         padding-left: 23px;
-        padding-right: 23px;
+        padding-right: 23px;*/
         border-right: 1px solid rgba(238, 238, 238, 1);
         border-left: 1px solid rgba(238, 238, 238, 1);
         border-bottom: 1px solid rgba(238, 238, 238, 1);
@@ -70,8 +70,8 @@
         font-size: 18px;
         line-height: 2;
         letter-spacing: 0.06em;
-        margin-top: 0;
-        margin-bottom: 0;
+        /*margin-top: 0;
+        margin-bottom: 0;*/
     }
 
     &__description {
@@ -79,8 +79,8 @@
         font-weight: 400;
         font-size: 16px;
         line-height: 1.88;
-        margin-top: 4px;
-        margin-bottom: 0;
+        /*margin-top: 4px;
+        margin-bottom: 0;*/
     }
 }
 

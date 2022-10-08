@@ -1,21 +1,21 @@
 .portfolio-buttons {
     margin-left: auto;
     margin-right: auto;
-    width: 575px;
+    /*width: 575px;
     outline: 2px solid none;
-    margin-top: 94px;
+    margin-top: 94px;*/
 
-    &__list {
+   /* &__list {
         display: flex;
         flex-direction: column(row);
         padding-left: 0;
         margin-left: -8px;
     }
-
+    */
     &__item {
-        flex-basis: content;
+       /* flex-basis: content;
         width: 38px;
-        margin-left: 8px;
+        margin-left: 8px;*/
         background-color: rgba(245, 244, 250, 1);
 
         &:hover,

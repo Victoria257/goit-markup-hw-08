@@ -84,21 +84,20 @@ button:focus {
 .container {
   margin-left: auto;
   margin-right: auto;
-  padding-left: 15px;
-  padding-right: 15px;
+  /*padding-left: 15px;
+  padding-right: 15px;*/
   width: 480px;
   outline: 2px solid none;
 }
 
 .header {
   border-bottom: 1px solid rgb(236, 236, 236);
-  /*&__wrapper {
-  position: relative;
+}
+.header__wrapper {
+  /*position: relative;
   display: flex;
-  align-items: center;
-  padding-top: 24px;
-  padding-bottom: 24px;
-  }*/
+  align-items: center;*/
+  padding: 16px 15px;
 }
 
 .logo {
@@ -214,9 +213,8 @@ button:focus {
   background-position: center;
   background-repeat: no-repeat;
   text-align: center;
-  outline: 2px solid none;
-  /*padding-top: 197px;
-  padding-bottom: 203px;*/
+  padding: 118px 60px;
+  outline: solid red;
 }
 .hero__title {
   font-weight: 900;
@@ -855,26 +853,21 @@ button:focus {
 .portfolio-buttons {
   margin-left: auto;
   margin-right: auto;
-  width: 575px;
+  /*width: 575px;
   outline: 2px solid none;
-  margin-top: 94px;
-}
-.portfolio-buttons__list {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column(row);
-          flex-direction: column(row);
-  padding-left: 0;
-  margin-left: -8px;
+  margin-top: 94px;*/
+  /* &__list {
+       display: flex;
+       flex-direction: column(row);
+       padding-left: 0;
+       margin-left: -8px;
+   }
+   */
 }
 .portfolio-buttons__item {
-  -ms-flex-preferred-size: content;
-      flex-basis: content;
-  width: 38px;
-  margin-left: 8px;
+  /* flex-basis: content;
+   width: 38px;
+   margin-left: 8px;*/
   background-color: rgb(245, 244, 250);
 }
 .portfolio-buttons__item:hover, .portfolio-buttons__item:focus {
@@ -883,18 +876,13 @@ button:focus {
 }
 
 .portfolio-cards {
-  margin-top: 34px;
+  /*margin-top: 34px;
   margin-bottom: 94px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  flex-wrap: wrap;
+  align-items: center;
   gap: 30px;
-  margin-bottom: 0;
+  margin-bottom: 0;*/
 }
 .portfolio-cards .portfolio-cards__item:hover, .portfolio-cards .portfolio-cards__item:focus-within {
   -webkit-box-shadow: 6px 1px 4px rgba(0, 0, 0, 0.16), 4px 0px 4px rgba(0, 0, 0, 0.06), 1px 0px 1px rgba(0, 0, 0, 0.12);
@@ -902,12 +890,9 @@ button:focus {
 }
 
 .card {
-  position: relative;
-  display: -webkit-box;
-  display: -ms-flexbox;
+  /*position: relative;
   display: flex;
-  -ms-flex-line-pack: end;
-      align-content: flex-end;
+  align-content: flex-end;*/
   /*ховаємо модальне вікно, яке без ховеру знаходиться під фото*/
   overflow: hidden;
 }
@@ -940,10 +925,10 @@ button:focus {
   text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 .card__content {
-  padding-top: 20px;
+  /*padding-top: 20px;
   padding-bottom: 19px;
   padding-left: 23px;
-  padding-right: 23px;
+  padding-right: 23px;*/
   border-right: 1px solid rgb(238, 238, 238);
   border-left: 1px solid rgb(238, 238, 238);
   border-bottom: 1px solid rgb(238, 238, 238);
@@ -954,14 +939,14 @@ button:focus {
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
-  margin-top: 0;
-  margin-bottom: 0;
+  /*margin-top: 0;
+  margin-bottom: 0;*/
 }
 .card__description {
   color: var(--pargraf-text-color);
   font-weight: 400;
   font-size: 16px;
   line-height: 1.88;
-  margin-top: 4px;
-  margin-bottom: 0;
+  /*margin-top: 4px;
+  margin-bottom: 0;*/
 }/*# sourceMappingURL=main.css.map */
