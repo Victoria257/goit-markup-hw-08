@@ -1,11 +1,12 @@
-/* .navigation {
-    display: flex;
+.navigation {
+    display: none;
+    /*display: flex;
     align-items: center;
     margin: 0;
     padding: 0;
-    margin-left: 91px;
+    margin-left: 91px;*/
 }
-*/
+
 .navigation__link {
     /*margin-right: 50px;*/
     color: var(--title-text-color);
