@@ -64,9 +64,31 @@ button:focus {
     outline: 3px solid black;
 }
 
+img {
+  display: block;
+  /*прибирає відступ знизу під фото*/
+
+  max-width: 100%; 
+  height: auto;
+}
+
 .container {
     margin-left: auto;
     margin-right: auto;
     padding: 60px 15px;
-    max-width: 480px;
+
+
+    @media screen and (min-width: 480px) {
+        width: 480px;
+    }
+
+    @media screen and (min-width: 768px) {
+        width: 768px;
+    }
+
+    @media screen and (min-width: 1600px) {
+        width: 1600px;
+    }
+    
 }
+

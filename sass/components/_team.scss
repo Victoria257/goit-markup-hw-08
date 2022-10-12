@@ -3,6 +3,7 @@
     background-color: rgba(245, 244, 250, 1);
 
         &__wrapper {
+            outline: solid none;
        
         }
 
@@ -18,7 +19,7 @@
         }
     
         &__list {
-           
+            outline: solid none;
             /*display: flex;
             margin-top: 50px;
             margin-bottom: 0;
@@ -59,9 +60,10 @@
         }
     
         &__social-box {
-            margin: 16px 122px 0px 122px;
+            margin-top: 16px;
             display: flex;
-            justify-content: space-between;
+            gap: 10px;
+            justify-content: center;
             list-style: none;
         }
     

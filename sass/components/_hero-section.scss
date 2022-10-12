@@ -6,12 +6,13 @@
     color: var(--white);
     background-image: linear-gradient(to right,
             rgba(47, 48, 58, 0.4),
-            rgba(47, 48, 58, 0.4)), url(../images/1/bg-title.png);
+            rgba(47, 48, 58, 0.4)), url(/images/1/header-bg-1.png);
     background-color: var(--dark-background);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     text-align: center;
+
     
 
     &__wrapper {
@@ -52,3 +53,22 @@
     }
 }
 
+@media (min-device-pixel-ratio: 2),
+(min-resolution: 192dpi),
+(min-resolution: 2dppx) {
+    .hero {
+        background-image: linear-gradient(to right,
+                rgba(47, 48, 58, 0.4),
+                rgba(47, 48, 58, 0.4)), url(/images/1/header-bg-2.png);
+    }
+}
+
+@media (min-device-pixel-ratio: 3),
+(min-resolution: 288dpi),
+(min-resolution: 3dppx) {
+    .hero {
+        background-image: linear-gradient(to right,
+                rgba(47, 48, 58, 0.4),
+                rgba(47, 48, 58, 0.4)), url(/images/1/header-bg-3.png);
+    }
+}
