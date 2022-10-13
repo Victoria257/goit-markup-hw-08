@@ -198,7 +198,9 @@
     }
 
     .header__wrapper {
+        position: relative;
         display:flex;
+        align-items: center;
         padding: 21px 15px;
     }
 

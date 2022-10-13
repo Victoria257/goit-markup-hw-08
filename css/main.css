@@ -287,9 +287,13 @@ img {
     display: none;
   }
   .header__wrapper {
+    position: relative;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     padding: 21px 15px;
   }
   .menu-container {
@@ -728,14 +732,6 @@ img {
   width: 528px;
   height: 581px;
 }*/
-.advantage {
-  /*&__list {
-      display: flex;
-      justify-content: space-between;
-      margin-right: -30px;
-  }
-  */
-}
 .advantage__title {
   color: var(--title-text-color);
   font-weight: 700;
@@ -757,9 +753,6 @@ img {
   margin-bottom: 0;
 }
 
-.advantage__item {
-  /* margin-right: 30px;*/
-}
 .advantage__item::before {
   display: block;
   content: "";
@@ -774,18 +767,55 @@ img {
   background-image: url(/images/icons.svg/antenna.svg);
 }
 .advantage__item:nth-child(2)::before {
-  margin-top: 30px;
   background-image: url(/images/icons.svg/clock.svg);
 }
+@media screen and (max-width: 767px) {
+  .advantage__item:nth-child(2)::before {
+    margin-top: 30px;
+  }
+}
 .advantage__item:nth-child(3)::before {
-  margin-top: 30px;
   background-image: url(/images/icons.svg/diagram.svg);
 }
+@media screen and (max-width: 767px) {
+  .advantage__item:nth-child(3)::before {
+    margin-top: 30px;
+  }
+}
 .advantage__item:nth-child(4)::before {
-  margin-top: 30px;
   background-image: url(/images/icons.svg/astronaut.svg);
 }
+@media screen and (max-width: 767px) {
+  .advantage__item:nth-child(4)::before {
+    margin-top: 30px;
+  }
+}
 
+/*-------------------------------------------TABLET-----------------------------------------*/
+.advantage__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  gap: 30px;
+  width: 100%;
+}
+.advantage__item {
+  outline: solid green;
+  width: calc((100% - 30px) / 2);
+}
+.advantage__item::before {
+  outline: solid none;
+}
+
+/*-------------------------------------------DESKTOP-----------------------------------------*/
+/*&__list {
+        display: flex;
+        justify-content: space-between;
+        margin-right: -30px;
+    }
+    */
 .directions {
   display: none;
   padding-bottom: 94px;

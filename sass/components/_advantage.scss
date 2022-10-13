@@ -1,15 +1,6 @@
 .advantage {
 
-    &__wrapper {
-    
-    }
 
-    /*&__list {
-        display: flex;
-        justify-content: space-between;
-        margin-right: -30px;
-    }
-    */
     &__title {
         color: var(--title-text-color);
         font-weight: 700;
@@ -36,7 +27,7 @@
 
 
 .advantage__item {
-   /* margin-right: 30px;*/
+
 
     &::before {
         display: block;
@@ -56,19 +47,65 @@
     }
 
     &:nth-child(2)::before {
-        margin-top: 30px;
         background-image: url(/images/icons.svg/clock.svg);
+
+        @media screen and (max-width: 767px) {
+                margin-top: 30px;
+            }
     }
 
     &:nth-child(3)::before {
-        margin-top: 30px;
         background-image: url(/images/icons.svg/diagram.svg);
+
+        @media screen and (max-width: 767px) {
+                margin-top: 30px;
+            }
     }
 
     &:nth-child(4)::before {
-        margin-top: 30px;
         background-image: url(/images/icons.svg/astronaut.svg);
+
+        @media screen and (max-width: 767px) {
+            margin-top: 30px;
+        }
     }
 }
 
 
+/*-------------------------------------------TABLET-----------------------------------------*/
+
+
+
+    .advantage {
+
+        &__list {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 30px;
+            width: 100%;
+        }
+
+        &__item {
+            outline: solid green;
+            width: calc((100% - 30px) / 2);
+
+            &::before {
+             outline: solid none;
+            }
+        }
+    }
+
+
+
+
+
+
+
+/*-------------------------------------------DESKTOP-----------------------------------------*/
+
+/*&__list {
+        display: flex;
+        justify-content: space-between;
+        margin-right: -30px;
+    }
+    */
