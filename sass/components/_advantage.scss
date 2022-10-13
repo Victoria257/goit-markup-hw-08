@@ -86,12 +86,8 @@
         }
 
         &__item {
-            outline: solid green;
             width: calc((100% - 30px) / 2);
 
-            &::before {
-             outline: solid none;
-            }
         }
     }
 

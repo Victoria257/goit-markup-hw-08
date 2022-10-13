@@ -802,11 +802,7 @@ img {
   width: 100%;
 }
 .advantage__item {
-  outline: solid green;
   width: calc((100% - 30px) / 2);
-}
-.advantage__item::before {
-  outline: solid none;
 }
 
 /*-------------------------------------------DESKTOP-----------------------------------------*/
