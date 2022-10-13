@@ -769,11 +769,6 @@ img {
 .advantage__item:nth-child(2)::before {
   background-image: url(/images/icons.svg/clock.svg);
 }
-@media screen and (max-width: 767px) {
-  .advantage__item:nth-child(2)::before {
-    margin-top: 30px;
-  }
-}
 .advantage__item:nth-child(3)::before {
   background-image: url(/images/icons.svg/diagram.svg);
 }
@@ -894,6 +889,7 @@ img {
   justify-content: space-between;*/
 }
 .team__card {
+  outline: solid none;
   text-align: center;
   background-color: var(--white);
   font-size: 16px;
@@ -956,6 +952,22 @@ img {
   fill: currentColor;
 }
 
+/*--------------------------------------------TABLET--------------------------------------*/
+@media screen and (min-width: 768px) {
+  .team__card {
+    width: 354px;
+    margin-top: 0;
+  }
+  .team__list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    gap: 30px;
+    margin-top: 30px;
+  }
+}
 .clients__title {
   font-style: normal;
   font-weight: 700;
