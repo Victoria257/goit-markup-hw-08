@@ -1017,6 +1017,16 @@ img {
   fill: var(--blue);
 }
 
+/*-------------------------------------------------TABLET--------------------------------------------*/
+@media screen and (min-width: 768px) {
+  .clients__link {
+    padding: 16px 60px;
+  }
+  .clients__name {
+    width: 226px;
+    height: 92px;
+  }
+}
 .footer {
   background-color: var(--dark-background);
   color: var(--white);
@@ -1032,6 +1042,17 @@ img {
   }*/
 }
 
+/*---------------------------------------TABLET----------------------------------------*/
+@media screen and (min-width: 768px) {
+  .footer__envelop {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .footer__wrapper {
+    margin-left: 61px;
+  }
+}
 .address {
   margin-top: 20px;
   font-style: normal;
@@ -1051,6 +1072,8 @@ img {
   outline: 3px solid black;
 }
 
+/*---------------------------------------TABLET----------------------------------------*/
+/*---------------------------------------DESKTOP----------------------------------------*/
 .connect {
   margin-top: 60px;
 }
@@ -1093,6 +1116,13 @@ img {
   background-color: var(--blue);
 }
 
+/*---------------------------------------TABLET----------------------------------------*/
+@media screen and (min-width: 768px) {
+  .connect {
+    margin-top: 0;
+    margin-left: 165px;
+  }
+}
 .mailing {
   margin-top: 60px;
 }
@@ -1143,6 +1173,20 @@ img {
   height: 24px;
 }
 
+/*---------------------------------------TABLET----------------------------------------*/
+@media screen and (min-width: 768px) {
+  .mailing {
+    display: block;
+  }
+  .mailing__input {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 450px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
 .portfolio-buttons {
   margin-left: auto;
   margin-right: auto;

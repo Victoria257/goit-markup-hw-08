@@ -51,4 +51,16 @@
 
 }
 
+/*-------------------------------------------------TABLET--------------------------------------------*/
 
+@media screen and (min-width: 768px) {
+
+    .clients__link {
+        padding: 16px 60px;
+    }
+
+    .clients__name {
+        width: 226px;
+        height: 92px;
+    }
+}

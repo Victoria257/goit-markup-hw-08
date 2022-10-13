@@ -13,4 +13,20 @@
         margin-bottom: 60px;
     }*/
 }
+    /*---------------------------------------TABLET----------------------------------------*/
 
+    @media screen and (min-width: 768px) {
+
+        .footer {
+
+           
+            &__envelop {
+                display: flex;
+            }
+
+            &__wrapper {
+                margin-left: 61px;
+            }
+        }
+
+    }
