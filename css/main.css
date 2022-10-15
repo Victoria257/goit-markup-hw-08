@@ -929,7 +929,6 @@ img {
 @media screen and (min-width: 1200px) {
   .directions__wrapper {
     padding-top: 47px;
-    outline: solid red;
   }
   .directions__title {
     font-weight: 700;
@@ -939,7 +938,6 @@ img {
     margin: 0;
   }
   .directions__list {
-    outline: solid blue;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -951,7 +949,6 @@ img {
             justify-content: space-between;
   }
   .directions__item {
-    outline: solid green;
     position: relative;
     gap: 30px;
   }
@@ -966,7 +963,7 @@ img {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    bottom: 4px;
+    bottom: 0px;
     left: 0;
     width: 100%;
     height: 70px;
