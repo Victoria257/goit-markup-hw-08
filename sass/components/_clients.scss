@@ -64,3 +64,25 @@
         height: 92px;
     }
 }
+
+/*-------------------------------------------------DESKTOP--------------------------------------------*/
+
+@media screen and (min-width: 1200px) {
+
+    .clients {
+
+        &__title {
+            font-size: 36px;
+            line-height: 1.17;
+            margin-bottom: 50px;
+        }
+
+        &__box {
+            flex-wrap: nowrap;
+        }
+
+        &__link {
+            padding: 16px 32px;
+        }
+    }
+}

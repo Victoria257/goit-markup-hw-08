@@ -1152,6 +1152,21 @@ img {
     height: 92px;
   }
 }
+/*-------------------------------------------------DESKTOP--------------------------------------------*/
+@media screen and (min-width: 1200px) {
+  .clients__title {
+    font-size: 36px;
+    line-height: 1.17;
+    margin-bottom: 50px;
+  }
+  .clients__box {
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+  }
+  .clients__link {
+    padding: 16px 32px;
+  }
+}
 .footer {
   background-color: var(--dark-background);
   color: var(--white);
