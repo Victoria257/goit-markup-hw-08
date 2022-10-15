@@ -65,7 +65,36 @@
                 width: 450px ;
                 margin-left: auto;
                 margin-right: auto;
+                margin-bottom: 0;
              
+            }
+
+            &__button {
+                margin-left: 12px;
             }
         }
    }
+
+
+   /*---------------------------------------DESKTOP----------------------------------------*/
+
+
+@media screen and (min-width: 1200px) {
+    .mailing {
+        margin-left: 93px;
+        margin-top: 0px;
+
+        &__form {
+            display: flex;
+        }
+
+        &__input {
+            width: 358px;
+        }
+
+        &__title {
+            text-align: start;
+        }
+    }
+
+}

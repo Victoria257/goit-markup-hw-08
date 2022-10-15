@@ -4,16 +4,11 @@
     outline: 2px solid none;
     text-align: center;
 
-    /*&__container {
-        display: flex;
-    }
-
-    &__wrapper {
-        margin-top: 60px;
-        margin-bottom: 60px;
-    }*/
 }
-    /*---------------------------------------TABLET----------------------------------------*/
+
+
+/*---------------------------------------TABLET----------------------------------------*/
+
 
     @media screen and (min-width: 768px) {
 
@@ -30,3 +25,23 @@
         }
 
     }
+
+ /*---------------------------------------DESKTOP----------------------------------------*/
+
+  @media screen and (min-width: 1200px) {
+
+    .footer {
+        &__container {
+            display: flex;
+            align-items: flex-start;
+            justify-content: space-between;
+            padding-top: 60px;
+            padding-bottom: 60px;
+        }
+
+        &__wrapper {
+            margin-left: 0;
+            text-align: start;
+        }
+    }
+  }
