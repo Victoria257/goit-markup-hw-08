@@ -151,6 +151,12 @@
         margin-top: 302px;
         }
 
+            &:focus-within {
+                color: var(--blue);
+                fill: var(--blue);
+                outline: 3px solid black;
+            }
+
     }
 
     &__mail {
@@ -163,6 +169,12 @@
         @media screen and (max-width: 767px) {
         margin-top: 32px;
         }
+
+            &:focus-within {
+                color: var(--blue);
+                fill: var(--blue);
+                outline: 3px solid black;
+            }
     }
 
     &__icon-envelope,&__icon-smartphone {
@@ -237,8 +249,13 @@
 
     .header-contact {
         display: flex;
-        flex-direction: column-reverse;
-    
+      
+
+            @media screen and (min-width: 768px) and (max-width: 1199px) {
+                flex-direction: column-reverse;
+            }
+
+
         &__phone, &__mail {
             font-size: 12px;
             line-height: 1.17;
@@ -260,7 +277,7 @@
 
                 &:focus {
                     color: var(--blue);
-                    outline: 3px solid black;
+                    
                 }
 
         }
@@ -283,3 +300,60 @@
 
 
 /*-------------------------------------------DESKTOP-----------------------------------------*/
+
+@media screen and (min-width: 1200px) {
+
+    .header__wrapper {
+        justify-content: space-between;
+        padding-top: 25px;
+        padding-bottom: 25px;
+    }
+
+    .menu-container {
+        display: flex;
+        margin-left: 92px;
+    }
+
+    logo__link {
+        font-size: 26px;
+        line-height: 1.19;
+    }
+
+    .navigation {
+      margin-right: 315px;
+      margin-left: 0;
+    }
+
+    .header-contact {
+        flex-direction: row-reverse;
+        align-items: center;
+      
+        &__phone,
+        &__mail {
+            font-size: 14px;
+            line-height: 1.14;
+        }
+
+        &__mail {
+            margin-right: 30px;
+        }
+
+        &__phone {
+            margin-top: 0;
+        }
+
+        &__icon-envelope {
+            width: 16px;
+            height: 12px;
+            margin-right: 10px;
+        }
+
+        &__icon-smartphone {
+            width: 10px;
+            height: 16px;
+            margin-right: 10px;
+        }
+
+    }
+
+}

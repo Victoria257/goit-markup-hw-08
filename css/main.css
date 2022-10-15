@@ -107,9 +107,9 @@ img {
     width: 768px;
   }
 }
-@media screen and (min-width: 1600px) {
+@media screen and (min-width: 1200px) {
   .container {
-    width: 1600px;
+    width: 1200px;
   }
 }
 
@@ -247,6 +247,11 @@ img {
     margin-top: 302px;
   }
 }
+.header-contact__phone:focus-within {
+  color: var(--blue);
+  fill: var(--blue);
+  outline: 3px solid black;
+}
 .header-contact__mail {
   font-weight: 500;
   font-size: 24px;
@@ -258,6 +263,11 @@ img {
   .header-contact__mail {
     margin-top: 32px;
   }
+}
+.header-contact__mail:focus-within {
+  color: var(--blue);
+  fill: var(--blue);
+  outline: 3px solid black;
 }
 @media screen and (max-width: 767px) {
   .header-contact__icon-envelope, .header-contact__icon-smartphone {
@@ -334,19 +344,29 @@ img {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+  }
+}
+@media screen and (min-width: 768px) and (min-width: 768px) and (max-width: 1199px) {
+  .header-contact {
     -webkit-box-orient: vertical;
     -webkit-box-direction: reverse;
         -ms-flex-direction: column-reverse;
             flex-direction: column-reverse;
   }
+}
+@media screen and (min-width: 768px) {
   .header-contact__phone, .header-contact__mail {
     font-size: 12px;
     line-height: 1.17;
     color: var(--pargraf-text-color);
   }
+}
+@media screen and (min-width: 768px) {
   .header-contact__phone {
     margin-top: 10px;
   }
+}
+@media screen and (min-width: 768px) {
   .header-contact__icon-box {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -361,13 +381,16 @@ img {
   }
   .header-contact__icon-box:focus {
     color: var(--blue);
-    outline: 3px solid black;
   }
+}
+@media screen and (min-width: 768px) {
   .header-contact__icon-envelope {
     width: 14px;
     height: 10px;
     margin-right: 8px;
   }
+}
+@media screen and (min-width: 768px) {
   .header-contact__icon-smartphone {
     width: 10px;
     height: 14px;
@@ -375,6 +398,58 @@ img {
   }
 }
 /*-------------------------------------------DESKTOP-----------------------------------------*/
+@media screen and (min-width: 1200px) {
+  .header__wrapper {
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    padding-top: 25px;
+    padding-bottom: 25px;
+  }
+  .menu-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin-left: 92px;
+  }
+  logo__link {
+    font-size: 26px;
+    line-height: 1.19;
+  }
+  .navigation {
+    margin-right: 315px;
+    margin-left: 0;
+  }
+  .header-contact {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: row-reverse;
+            flex-direction: row-reverse;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .header-contact__phone, .header-contact__mail {
+    font-size: 14px;
+    line-height: 1.14;
+  }
+  .header-contact__mail {
+    margin-right: 30px;
+  }
+  .header-contact__phone {
+    margin-top: 0;
+  }
+  .header-contact__icon-envelope {
+    width: 16px;
+    height: 12px;
+    margin-right: 10px;
+  }
+  .header-contact__icon-smartphone {
+    width: 10px;
+    height: 16px;
+    margin-right: 10px;
+  }
+}
 .hero {
   max-width: 478px;
   max-height: 400px;
@@ -456,6 +531,16 @@ img {
   }
 }
 /*-----------------------------DESKTOP------------------------------------------------*/
+@media screen and (min-width: 1200px) {
+  .hero {
+    outline: 5px solid orange;
+    max-width: 1600px;
+    max-height: 600px;
+    background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(/images/1/bg-title.png);
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(/images/1/bg-title.png);
+    background-color: var(--dark-background);
+  }
+}
 .backdrop {
   position: fixed;
   top: 0;
