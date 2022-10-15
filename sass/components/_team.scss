@@ -17,16 +17,7 @@
             margin-left: auto;
             margin-right: auto; 
         }
-    
-        &__list {
-            outline: solid none;
-            /*display: flex;
-            margin-top: 50px;
-            margin-bottom: 0;
-            margin-right: -30px;
-            justify-content: space-between;*/
-        }
-        
+ 
         &__card {
             outline: solid none;
             text-align: center;
@@ -113,4 +104,27 @@
                
 }
 
+}
+
+
+/*--------------------------------------------DESKTOP--------------------------------------*/
+
+@media screen and (min-width: 1200px) {
+
+    .team {
+
+        &__title {
+            font-size: 36px;
+            line-height: 1.17;
+        }
+
+        &__list {
+            flex-wrap: nowrap;
+            margin-top: 50px;
+        }
+
+        &__card {
+            width: 270px;
+        }
+    }
 }
