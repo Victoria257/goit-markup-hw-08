@@ -6,7 +6,7 @@
     color: var(--white);
     background-image: linear-gradient(to right,
             rgba(47, 48, 58, 0.4),
-            rgba(47, 48, 58, 0.4)), url(/images/1/header-bg-1.png);
+            rgba(47, 48, 58, 0.4)), url(../images/1/header-bg-1.png);
     background-color: var(--dark-background);
     background-size: cover;
     background-position: center;
@@ -80,7 +80,7 @@
         max-width: 768px;
         background-image: linear-gradient(to right,
                 rgba(47, 48, 58, 0.4),
-                rgba(47, 48, 58, 0.4)), url(/images/1/bg-title.png);
+                rgba(47, 48, 58, 0.4)), url(../images/1/bg-title.png);
         background-color: var(--dark-background);
         
 
