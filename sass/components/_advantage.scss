@@ -42,17 +42,17 @@
 
 
     &:nth-child(1)::before {
-        background-image: url(/images/icons.svg/antenna.svg);
+        background-image: url(../images/icons.svg/antenna.svg);
 
     }
 
     &:nth-child(2)::before {
-        background-image: url(/images/icons.svg/clock.svg);
+        background-image: url(../images/icons.svg/clock.svg);
 
     }
 
     &:nth-child(3)::before {
-        background-image: url(/images/icons.svg/diagram.svg);
+        background-image: url(../images/icons.svg/diagram.svg);
 
         @media screen and (max-width: 767px) {
                 margin-top: 30px;
@@ -60,7 +60,7 @@
     }
 
     &:nth-child(4)::before {
-        background-image: url(/images/icons.svg/astronaut.svg);
+        background-image: url(../images/icons.svg/astronaut.svg);
 
         @media screen and (max-width: 767px) {
             margin-top: 30px;
