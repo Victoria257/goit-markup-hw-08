@@ -21,80 +21,83 @@
   <body>
     <header class="header">
         <div class="container header__wrapper">
-          <div class="logo-wrapper">
-            <div class="logo">
-                <a href="./index.html" lang="en" class="logo__link logo--focus">
-                  Web<span class="logo__header">Studio</span>
-                </a>
-            </div>
-
-            <button 
-            type="button" 
-            class="header__button"
-            aria-expanded="false"
-            aria-controls="menu-container"
-            data-menu-button
-            >
-              <svg 
-                width="40" 
-                hight="40"
-                aria-label="Перемикач мобільного меню"
-              >
-                <use class="header__icon-cross" href="./images/symbol-defs.svg#icon-close_40"></use>
-                <use class="header__icon-menu" href="images/symbol-defs.svg#icon-menu_40"></use>
-              </svg>
-            </button>
+          
+          <div class="logo">
+              <a href="./index.html" lang="en" class="logo__link logo--focus">
+                Web<span class="logo__header">Studio</span>
+              </a>
           </div>
 
+          <button 
+          type="button" 
+          class="header__button"
+          aria-expanded="false"
+          aria-controls="menu-container"
+          data-menu-button
+          >
+            <svg 
+              width="40" 
+              hight="40"
+              aria-label="Перемикач мобільного меню"
+            >
+              <use class="header__icon-cross" href="./images/symbol-defs.svg#icon-close_40"></use>
+              <use class="header__icon-menu" href="images/symbol-defs.svg#icon-menu_40"></use>
+            </svg>
+          </button>
+
           <div class="menu-container" id="menu-container" data-menu>
-            <nav class="navigation-wrapper">
-              <ul class="navigation">
-                <li>
-                  <a class="navigation__link current" href="./index.html">Студія</a>
-                </li>
-                <li>
-                  <a class="navigation__link" href="./portfolio.html">Портфоліо</a>
-                </li>
-                <li>
-                  <a class="navigation__link" href="#">Контакт</a>
-                </li>
-              </ul>
-            </nav>
+            <div class="menu-container__box">
+              <nav class="navigation-wrapper">
+                <ul class="navigation">
+                  <li>
+                    <a class="navigation__link current" href="./index.html">Студія</a>
+                  </li>
+                  <li>
+                    <a class="navigation__link" href="./portfolio.html">Портфоліо</a>
+                  </li>
+                  <li>
+                    <a class="navigation__link" href="#">Контакт</a>
+                  </li>
+                </ul>
+              </nav>
 
-            <ul class="header-contact">
-              <li class="header-contact__phone">
-                <a class="header-contact__icon-box" href="tel:+380991111111">
-                  <svg class="header-contact__icon-smartphone">
-                    <use href="./images/symbol-defs.svg#icon-smartphone"></use>
-                  </svg>
-                  <div>+38 099 111 11 11</div>
-                </a>
-              </li>
+              <div class="header__menu-bottom">
+                <ul class="header-contact">
+                  <li class="header-contact__phone">
+                    <a class="header-contact__icon-box" href="tel:+380991111111">
+                      <svg class="header-contact__icon-smartphone">
+                        <use href="./images/symbol-defs.svg#icon-smartphone"></use>
+                      </svg>
+                      <div>+38 099 111 11 11</div>
+                    </a>
+                  </li>
 
-              <li class="header-contact__mail">
-                <a class="header-contact__icon-box" href="mailto:info@example.com">
-                  <svg class="header-contact__icon-envelope">
-                    <use href="./images/symbol-defs.svg#icon-envelope"></use>
-                  </svg>
-                  <div>info@example.com</div>
-                </a>
-              </li>
-            </ul>
+                  <li class="header-contact__mail">
+                    <a class="header-contact__icon-box" href="mailto:info@example.com">
+                      <svg class="header-contact__icon-envelope">
+                        <use href="./images/symbol-defs.svg#icon-envelope"></use>
+                      </svg>
+                      <div>info@example.com</div>
+                    </a>
+                  </li>
+                </ul>
 
-            <ul class="header__social-box">
-              <li class="header__social-net">
-                <a href="">Instagram</a>
-              </li>
-              <li class="header__social-net">
-                <a href="">Twitter</a>
-              </li>
-              <li class="header__social-net">
-                <a href="">Facebook</a>
-              </li>
-              <li class="header__social-net">
-                <a href="">LinkedIn</a>
-              </li>
-            </ul>
+                <ul class="header__social-box">
+                  <li class="header__social-net">
+                    <a href="">Instagram</a>
+                  </li>
+                  <li class="header__social-net">
+                    <a href="">Twitter</a>
+                  </li>
+                  <li class="header__social-net">
+                    <a href="">Facebook</a>
+                  </li>
+                  <li class="header__social-net">
+                    <a href="">LinkedIn</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
           </div>   
         </div>
     </header>
@@ -144,15 +147,16 @@
                 </label>
         
                 <label class="form-set__item">Коментар
-                  <textarea class="form-set__textarea" name="comment" rows="7" placeholder="Введіть текст" maxlength="1000"></textarea>
+                  <textarea class="form-set__textarea" name="comment" rows="6" placeholder="Введіть текст" maxlength="1000"></textarea>
                 </label>
               </div>
         
               <div class="license" role="group" aria-labelledby="terms of the contract">
                 <label class="license__box">
                   <input class="license__checkbox" type="checkbox" name="policy" value="">
-                  Погоджуюся з розсилкою та приймаю 
+                  <span class="license__text">Погоджуюся з розсилкою та приймаю
                   <a href="" class="license__link"> Умови договору</a>
+                  </span>
                   <span class="license__icon"></span>
                 </label>
               </div>
