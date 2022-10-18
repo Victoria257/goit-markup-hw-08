@@ -1483,10 +1483,11 @@ img {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-line-pack: end;
-      align-content: flex-end;
   /*ховаємо модальне вікно, яке без ховеру знаходиться під фото*/
   overflow: hidden;
+}
+.card img {
+  width: 450;
 }
 .card__modal-box {
   position: absolute;
@@ -1561,6 +1562,9 @@ img {
   }
 }
 @media screen and (min-width: 768px) {
+  .card img {
+    width: 354;
+  }
   .card__modal-box {
     padding: 49px 24px;
   }
@@ -1572,5 +1576,12 @@ img {
   }
   .portfolio-cards__item {
     /* width: 370px;*/
+    outline: solid none;
+  }
+  .card img {
+    width: 370;
+  }
+  .card__modal-box {
+    padding: 63px 24px;
   }
 }/*# sourceMappingURL=main.css.map */
