@@ -3,18 +3,13 @@
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 40px;
-    /*width: 575px;
-    outline: 2px solid none;
-    margin-top: 94px;*/
+    /*width: 575px;*/
+  
 
    &__list {
-   
-        max-width: 334px;
         display: flex;
-        /*flex-direction: column(row);
-        padding-left: 0;
-        margin-left: -8px;*/
         @media screen and (max-width: 767px) {
+        max-width: 334px;
         flex-wrap: wrap;
         
         }
@@ -61,9 +56,21 @@
         &__item {
             margin-top: 0;
         }
+        
+        &__list {
+            justify-content: center;
+        }
     }
     
 }
 
 
 /*-------------------------------------------DESKTOP-----------------------------------------*/
+
+@media screen and (min-width: 1200px) {
+
+    .portfolio-buttons {
+        margin-bottom: 34px;
+    }
+
+}

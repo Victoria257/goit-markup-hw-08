@@ -97,7 +97,9 @@
 
             &:first-child {
                 .card__content {
+                    @media screen and (min-width: 768px) and (max-width: 1199px) {
                     padding-bottom: 56px;
+                    }
                 }
                     
             }
@@ -126,6 +128,10 @@
 
     .portfolio-cards {
         outline: solid none;
+
+        &__item {
+            width: 370px;
+        }
 
     }
 }
