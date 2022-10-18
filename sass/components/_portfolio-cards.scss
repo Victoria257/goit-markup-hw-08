@@ -93,7 +93,7 @@
         flex-wrap: wrap;
         
         &__item {
-        width: 354px;
+        /*width: 354px;*/
 
             &:first-child {
                 .card__content {
@@ -130,7 +130,7 @@
         outline: solid none;
 
         &__item {
-            width: 370px;
+           /* width: 370px;*/
         }
 
     }

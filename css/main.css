@@ -1552,7 +1552,7 @@ img {
         flex-wrap: wrap;
   }
   .portfolio-cards__item {
-    width: 354px;
+    /*width: 354px;*/
   }
 }
 @media screen and (min-width: 768px) and (min-width: 768px) and (max-width: 1199px) {
@@ -1571,6 +1571,6 @@ img {
     outline: solid none;
   }
   .portfolio-cards__item {
-    width: 370px;
+    /* width: 370px;*/
   }
 }/*# sourceMappingURL=main.css.map */
