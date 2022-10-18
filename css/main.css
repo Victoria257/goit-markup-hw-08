@@ -1486,9 +1486,6 @@ img {
   /*ховаємо модальне вікно, яке без ховеру знаходиться під фото*/
   overflow: hidden;
 }
-.card img {
-  width: 450;
-}
 .card__modal-box {
   position: absolute;
   top: 0;
@@ -1553,7 +1550,7 @@ img {
         flex-wrap: wrap;
   }
   .portfolio-cards__item {
-    /*width: 354px;*/
+    width: 354px;
   }
 }
 @media screen and (min-width: 768px) and (min-width: 768px) and (max-width: 1199px) {
@@ -1562,9 +1559,6 @@ img {
   }
 }
 @media screen and (min-width: 768px) {
-  .card img {
-    width: 354;
-  }
   .card__modal-box {
     padding: 49px 24px;
   }
@@ -1575,11 +1569,8 @@ img {
     outline: solid none;
   }
   .portfolio-cards__item {
-    /* width: 370px;*/
+    width: 370px;
     outline: solid none;
-  }
-  .card img {
-    width: 370;
   }
   .card__modal-box {
     padding: 63px 24px;

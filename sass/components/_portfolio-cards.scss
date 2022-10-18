@@ -25,9 +25,6 @@
     /*ховаємо модальне вікно, яке без ховеру знаходиться під фото*/
     overflow: hidden;
 
-    img {
-        width: 450;
-    }
 
     &__modal-box {
         position: absolute;
@@ -96,7 +93,7 @@
         flex-wrap: wrap;
         
         &__item {
-        /*width: 354px;*/
+        width: 354px;
 
             &:first-child {
                 .card__content {
@@ -112,10 +109,6 @@
     }
 
     .card {
-
-        img {
-                width: 354;
-            }
 
         &__modal-box {
             padding: 49px 24px;
@@ -137,17 +130,13 @@
         outline: solid none;
 
         &__item {
-           /* width: 370px;*/
+            width: 370px;
            outline: solid none;
         }
 
     }
 
     .card {
-
-        img {
-                width: 370;
-            }
 
         &__modal-box {
             padding: 63px 24px;
