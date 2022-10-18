@@ -122,33 +122,47 @@
           <li class="portfolio-cards__item">
             <a href="#">
               <div class="card">
-
                 <picture class="card__image">
                   <source srcset="
-                    ./images/2/mobile/portfolio-mobile-1x1.webp 450w,
-                    ./images/2/mobile/portfolio-mobile-1x1.webp 900w,
-                    ./images/2/mobile/portfolio-mobile-1x1.webp 1350w,
-                    ./images/2/tablet/portfolio-tablet-1x1.webp 354w,
-                    ./images/2/tablet/portfolio-tablet-1x1.webp 708w,
-                    ./images/2/tablet/portfolio-tablet-1x1.webp 1062w,
-                    ./images/2/desktop/portfolio-desktop-1x1.webp 370w,
-                    ./images/2/desktop/portfolio-desktop-1x1.webp 740w,
-                    ./images/2/desktop/portfolio-desktop-1x1.webp 1110w
-                    " type="image/webp" />
-                  <img srcset="
-                    ./images/2/mobile/portfolio-mobile-1x1.jpg 450w,
-                    ./images/2/mobile/portfolio-mobile-1x1.jpg 900w,
-                    ./images/2/mobile/portfolio-mobile-1x1.jpg 1350w,
-                    ./images/2/tablet/portfolio-tablet-1x1.jpg 354w,
-                    ./images/2/tablet/portfolio-tablet-1x1.jpg 708w,
-                    ./images/2/tablet/portfolio-tablet-1x1.jpg 1062w,
-                    ./images/2/desktop/portfolio-desktop-1x1.jpg 370w,
-                    ./images/2/desktop/portfolio-desktop-1x1.jpg 740w,
-                    ./images/2/desktop/portfolio-desktop-1x1.jpg 1110w"
-                     src="./images/2/mobile/portfolio-mobile-1x1.jpg" alt="tehnokryak" width="450"
-                    sizes="(min-width: 768px) 354px, (min-width: 1200px) 370px, 450px" />
+                  ./images/2/mobile/portfolio-mobile-1x1.webp 1x,
+                  ./images/2/mobile/portfolio-mobile-1x1.webp 2x,
+                  ./images/2/mobile/portfolio-mobile-1x1.webp 3x
+                  " 
+                  media="(max-width: 767px)"
+                   type="image/webp" />
+                  <source srcset="
+                    ./images/2/mobile/portfolio-mobile-1x1.jpg 1x,
+                    ./images/2/mobile/portfolio-mobile-1x1.jpg 2x,
+                    ./images/2/mobile/portfolio-mobile-1x1.jpg 3x" 
+                    media="(max-width: 767px)"
+                    type="image/jpeg" />
+                  <source srcset="
+                    ./images/2/tablet/portfolio-tablet-1x1.webp 1x,
+                    ./images/2/tablet/portfolio-tablet-1x1.webp 2x,
+                    ./images/2/tablet/portfolio-tablet-1x1.webp 3x" 
+                    media="(min-width:768px)"
+                    type="image/webp" />
+                  <source srcset="
+                    ./images/2/tablet/portfolio-tablet-1x1.jpg 1x,
+                    ./images/2/tablet/portfolio-tablet-1x1.jpg 2x,
+                    ./images/2/tablet/portfolio-tablet-1x1.jpg 3x" 
+                    media="(min-width:768px)"
+                    type="image/jpeg" />
+                  <source srcset=" 
+                    ./images/2/desktop/portfolio-desktop-1x1.webp 1x,
+                    ./images/2/desktop/portfolio-desktop-1x1.webp 2x,
+                    ./images/2/desktop/portfolio-desktop-1x1.webp 3x" 
+                    media="(min-width:1200px)"
+                    type="image/webp" />
+                  <source srcset="
+                   ./images/2/desktop/portfolio-desktop-1x1.jpg 1x,
+                    ./images/2/desktop/portfolio-desktop-1x1.jpg 2x,
+                    ./images/2/desktop/portfolio-desktop-1x1.jpg 3x"
+                    media="(min-width:1200px)"
+                    type="image/jpeg" />
+                  <img src="./images/2/mobile/portfolio-mobile-1x1.jpg" alt="Технокряк" />
                 </picture>
-              
+
                 <div class="card__modal-box">
                   <p class="card__modal-text">
                     Ресурс пропонує комплексні пропозиції з різним рівнем
