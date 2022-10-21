@@ -629,6 +629,12 @@ img {
     width: 450px;
   }
 }
+@media screen and (max-height: 620px) and (orientation: landscape) {
+  .modal {
+    max-height: 95vh;
+    overflow-y: scroll;
+  }
+}
 .modal__title {
   text-align: center;
   margin-top: 0;

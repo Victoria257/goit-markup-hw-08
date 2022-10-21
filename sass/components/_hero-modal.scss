@@ -37,6 +37,11 @@
     @media screen and (min-width: 480px) {
       width: 450px;
   }
+
+    @media screen and (max-height: 620px) and (orientation: landscape) {
+      max-height: 95vh;
+      overflow-y: scroll;
+    }
  
   
 
